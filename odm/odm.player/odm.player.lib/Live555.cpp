@@ -64,7 +64,10 @@ namespace onvifmp{
 	}
 
 	void Live555::Run(MediaStreamInfo* mediaStreamInfo, IPlaybackController* playbackController){
+#ifdef DEBUG
 		OpenConsole();
+#endif // DEBUG
+
 		if(!Init(mediaStreamInfo)){
 			return;
 		}
