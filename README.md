@@ -3,4 +3,10 @@ mirror of http://sourceforge.net/projects/onvifdm/
 # License
 GNU General Public License version 2.0 (GPLv2)
 # IDE
-Build with Microsoft Visual Studio Express 2013. Required F# framework.
+This fork has been built using Visual Studio Community 2022. Following changes has been done:
+1. in VS installer seletc following individual components:
+   - F# desktop language support
+   - >NET Framework 2.5 development tools
+2. Uses FSharp.Core 3.0.2 from NuGet Package Manager whic is equivalent to FSharp Framework 4.3.0.0
+3. Various other project settings have been fixed to make sure both x64/release and x64/Debig verisons work out of box and have been tested on Windows 11.
+
