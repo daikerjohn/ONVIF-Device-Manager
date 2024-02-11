@@ -89,7 +89,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(FFMpegDir)$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
       <AdditionalDependencies>mscoree.lib;msvcmrt.lib;ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">msvcrtd.lib;msvcprtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -101,6 +102,10 @@
       <GenerateMapFile Condition="'$(Configuration)'=='Release'">true</GenerateMapFile>
       <OptimizeReferences Condition="'$(Configuration)'=='Release'">true</OptimizeReferences>
       <EnableCOMDATFolding Condition="'$(Configuration)'=='Release'">true</EnableCOMDATFolding>
+      <IgnoreSpecificDefaultLibraries Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ucrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ShowProgress Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotSet</ShowProgress>
       <!--<Profile>true</Profile>
 			<AssemblyDebug>false</AssemblyDebug>-->
     </Link>
