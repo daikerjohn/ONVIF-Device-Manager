@@ -542,10 +542,7 @@
                 else
                     return false
             }
-            let endpoints = uris |>
-                Seq.map (fun uri->(uri.Host, uri.Port)) |>
-                Seq.distinct |>
-                Seq.toList
+            let endpoints = uris |> Seq.map (fun uri->(uri.Host, uri.Port)) |> Seq.distinct |> Seq.toList
             match endpoints with
             | a::[] -> 
                 return this.CreateSession(

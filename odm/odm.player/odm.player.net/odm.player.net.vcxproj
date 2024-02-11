@@ -23,6 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>odm.player</RootNamespace>
     <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and $(VisualStudioVersion) == ''">$(VCTargetsPath11)</VCTargetsPath>
+    <TargetFrameworkVersion>4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup>
@@ -30,7 +31,7 @@
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>true</CLRSupport>
     <UseOfMfc>false</UseOfMfc>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)'=='Debug'">
     <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -88,7 +89,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <AdditionalLibraryDirectories>$(FFMpegDir)$(Platform)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <AdditionalDependencies>mscoree.lib;msvcmrt.lib;ws2_32.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">msvcrtd.lib;msvcprtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -105,9 +106,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)libs\live555-2013.02.11\live555.vcxproj">
-      <Project>{9819b4d5-2f85-4349-8159-e3a64cf97dc1}</Project>
-    </ProjectReference>
     <ProjectReference Include="$(SolutionDir)utils\utils.common\utils.common.csproj">
       <Project>{2faa440a-87d3-41ab-9931-25ac306a25ba}</Project>
     </ProjectReference>
@@ -119,6 +117,9 @@
     </ProjectReference>
     <ProjectReference Include="$(SolutionDir)odm\odm.player\odm.player.media\odm.player.media.csproj">
       <Project>{5ee86409-3ea7-482a-8702-6dca0d3bc4b1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\live555-2013.02.11\live555.vcxproj">
+      <Project>{9819b4d5-2f85-4349-8159-e3a64cf97dc1}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
