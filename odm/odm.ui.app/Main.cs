@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using utils;
@@ -19,7 +20,7 @@ namespace odm.ui {
 			Bootstrapper.CreateConsoleForTracing();
 
             log.WriteInfo(string.Format("\n== Program started at {0} ==\n", DateTime.Now));
-
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 			Bootstrapper.ScanSpecialFolders();
 			odm.ui.App app = new odm.ui.App();
 			app.InitializeComponent();
