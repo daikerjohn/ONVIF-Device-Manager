@@ -19,7 +19,7 @@ namespace odm.ui {
 			Bootstrapper.CreateConsoleForTracing();
 
             log.WriteInfo(string.Format("\n== Program started at {0} ==\n", DateTime.Now));
-
+			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 			Bootstrapper.ScanSpecialFolders();
 			odm.ui.App app = new odm.ui.App();
 			app.InitializeComponent();
