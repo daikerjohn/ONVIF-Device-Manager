@@ -2,9 +2,9 @@ name: ODM
 
 on:
   push:
-    branches: [ "ak/build-vs-2019" ]
+    branches: [ "ak/rejuvinate" ]
   pull_request:
-    branches: [ "ak/build-vs-2019" ]
+    branches: [ "ak/rejuvinate" ]
 
 jobs:
 

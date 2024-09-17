@@ -1,3 +1,5 @@
+[![ODM](https://github.com/Apra-Labs/ONVIF-Device-Manager/actions/workflows/odm.yml/badge.svg)](https://github.com/Apra-Labs/ONVIF-Device-Manager/actions/workflows/odm.yml)
+
 # ONVIF-Device-Manager
 mirror of http://sourceforge.net/projects/onvifdm/
 # License
@@ -12,13 +14,13 @@ This fork has been built using Visual Studio Community 2019. Following changes h
 4. Added support for TLS1.2 by moving the exe to dotNet4.5, tested with secure camera
 
 # Installer
-Basic msi installer is added
+MSI installer is built with every successful build. E.g. [this one](https://github.com/Apra-Labs/ONVIF-Device-Manager/actions/runs/10906247630/artifacts/1943470047)
 
 # Language Support
-English
-Russian
-Traditional Chinese
-Spanish thanks (wolfbelmi88)[https://sourceforge.net/u/wolfbelmi88/profile]
+ - English
+ - Russian
+ - Traditional Chinese
+ - Spanish thanks [wolfbelmi88](https://sourceforge.net/u/wolfbelmi88/profile)
 
 # Disclaimer
 The credit for this open source project remians with the original authors (synesis.ru).
