@@ -14,7 +14,7 @@ This fork has been built using Visual Studio Community 2019. Following changes h
 4. Added support for TLS1.2 by moving the exe to dotNet4.5, tested with secure camera
 
 # Installer
-MSI installer is built with every successful build. E.g. [this one](https://github.com/Apra-Labs/ONVIF-Device-Manager/actions/runs/10906247630/artifacts/1943470047)
+MSI installer is built with every successful build. [Latest](https://github.com/Apra-Labs/ONVIF-Device-Manager/releases/download/v2.2.250.2-x64-TLS1.2/odm-installer.zip)
 
 # Language Support
  - English
