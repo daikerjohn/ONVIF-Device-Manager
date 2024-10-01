@@ -23,7 +23,7 @@ MSI installer is built with every successful build. [Latest](https://github.com/
  - Spanish thanks [wolfbelmi88](https://sourceforge.net/u/wolfbelmi88/profile)
 
 # Disclaimer
-The credit for this open source project remians with the original authors (synesis.ru).
+The credit for this open source project remains with the original authors (synesis.ru).
 The current fork attempts to keep the project alive and make sure new builds can be easily built/debugged
 Apra Labs Inc. is happy to support the incredible OSS community.
 
