@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>odm.ui</RootNamespace>
     <AssemblyName>odm.ui.views</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Utf8Output>true</Utf8Output>
     <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
@@ -40,8 +40,8 @@
     <Reference Include="Accessibility">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FSharp.Core.3.0.2\lib\net40\FSharp.Core.dll</HintPath>
+    <Reference Include="FSharp.Core, Version=4.7.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FSharp.Core.4.7.2\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
@@ -85,19 +85,19 @@
       <HintPath>..\..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Core">
-      <HintPath>..\..\packages\Rx-Core.2.0.20823\lib\Net40\System.Reactive.Core.dll</HintPath>
+      <HintPath>..\..\packages\Rx-Core.2.0.20823\lib\Net45\System.Reactive.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
-      <HintPath>..\..\packages\Rx-Interfaces.2.0.20823\lib\Net40\System.Reactive.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\Rx-Interfaces.2.0.20823\lib\Net45\System.Reactive.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Linq">
-      <HintPath>..\..\packages\Rx-Linq.2.0.20823\lib\Net40\System.Reactive.Linq.dll</HintPath>
+      <HintPath>..\..\packages\Rx-Linq.2.0.20823\lib\Net45\System.Reactive.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.PlatformServices">
-      <HintPath>..\..\packages\Rx-PlatformServices.2.0.20823\lib\Net40\System.Reactive.PlatformServices.dll</HintPath>
+      <HintPath>..\..\packages\Rx-PlatformServices.2.0.20823\lib\Net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Windows.Threading">
-      <HintPath>..\..\packages\Rx-WPF.2.0.20823\lib\Net40\System.Reactive.Windows.Threading.dll</HintPath>
+      <HintPath>..\..\packages\Rx-WPF.2.0.20823\lib\Net45\System.Reactive.Windows.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Interactivity">
       <HintPath>..\..\packages\Prism.4.1.0.0\lib\NET40\System.Windows.Interactivity.dll</HintPath>
@@ -1041,10 +1041,6 @@
       <Project>{A13DCAE1-F908-431B-94BA-9CCE4C11D496}</Project>
       <Name>odm.infra</Name>
     </ProjectReference>
-    <ProjectReference Include="..\odm.localization\odm.localization.csproj">
-      <Project>{88A8B3A8-7758-4E5A-8DA8-692BAC98B07B}</Project>
-      <Name>odm.localization</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\utils\utils.bindings\utils.bindings.csproj">
       <Project>{161F40E9-5DB5-4AAC-93E3-20533C8EC463}</Project>
       <Name>utils.bindings</Name>
@@ -1068,6 +1064,10 @@
     <ProjectReference Include="..\..\utils\utils.xml\utils.xml.csproj">
       <Project>{C00B45E2-5ABA-4F7A-BD85-505594794AAE}</Project>
       <Name>utils.xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\odm.localization\odm.localization.csproj">
+      <Project>{88a8b3a8-7758-4e5a-8da8-692bac98b07b}</Project>
+      <Name>odm.localization</Name>
     </ProjectReference>
     <ProjectReference Include="..\odm.onvif.extensions\odm.onvif.extensions.fsproj">
       <Project>{B900157A-8F66-4C82-BEF3-9BFA7E85DF9D}</Project>

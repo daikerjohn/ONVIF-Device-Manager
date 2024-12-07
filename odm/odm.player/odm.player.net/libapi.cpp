@@ -16,6 +16,7 @@
 #include <algorithm>
 
 #include "odm.player.lib/Live555.hpp"
+using namespace onvifmp;
 
 namespace odm{
 	namespace player{

@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">Net40</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">Net45</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{1ADC989A-D944-48FB-A371-25D4453AF25E}</ProjectGuid>
@@ -12,14 +12,7 @@
     <AssemblyName>odm.extensibility</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'Net40' ">
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <DefineConstants>NET40; $(DefineConstants)</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'Net45' ">
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <DefineConstants>NET45; $(DefineConstants)</DefineConstants>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\$(Platform)\</OutputPath>
@@ -34,6 +27,14 @@
     <WarningLevel Condition="'$(Configuration)' == 'Release'">3</WarningLevel>
     <DefineConstants Condition="'$(Configuration)' == 'Debug'">DEBUG;TRACE;$(DefineConstants)</DefineConstants>
     <DefineConstants Condition="'$(Configuration)' == 'Release'">TRACE;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Practices.ServiceLocation">

@@ -10,13 +10,7 @@
     <RootNamespace>utils.async</RootNamespace>
     <AssemblyName>utils.async</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'Net40' ">
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <DefineConstants>NET40; $(DefineConstants)</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Platform)' == 'Net45' ">
+    <PlatformTarget>x64</PlatformTarget>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DefineConstants>NET45; $(DefineConstants)</DefineConstants>
   </PropertyGroup>
@@ -33,6 +27,14 @@
     <WarningLevel Condition="'$(Configuration)' == 'Release'">3</WarningLevel>
     <DefineConstants Condition="'$(Configuration)' == 'Debug'">DEBUG;TRACE;$(DefineConstants)</DefineConstants>
     <DefineConstants Condition="'$(Configuration)' == 'Release'">TRACE;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
