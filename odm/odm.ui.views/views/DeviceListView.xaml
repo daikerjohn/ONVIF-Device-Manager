@@ -136,9 +136,9 @@
 			<DockPanel>
 				<Button DockPanel.Dock="Right"
 					HorizontalAlignment="Right" Content="{Binding Strings.refresh}" 
-					Click="{Binding onRefresh}"/>
+					Command="{Binding onRefresh}"/>
 				<Button DockPanel.Dock="Left"
-					Click="{Binding onAdd}"
+					Command="{Binding onAdd}"
 					HorizontalAlignment="Left" Content="{Binding Strings.manualadd}"
 					ToolTip="Manually add"/>
 			</DockPanel>

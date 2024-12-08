@@ -15,11 +15,11 @@
     <DockPanel>
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
             <Button 
-                Click="{Binding ApplyCommand, ElementName=ctrl}"
+                Command="{Binding ApplyCommand, ElementName=ctrl}"
                 IsEnabled="{Binding IsModified}"
                 Content="{Binding ButtonsStrings.save, ElementName=ctrl}" HorizontalAlignment="Left" Style="{StaticResource ButtonLeft}"/>
             <Button 
-                Click="{Binding RevertCommand, ElementName=ctrl}"
+                Command="{Binding RevertCommand, ElementName=ctrl}"
                 IsEnabled="{Binding IsModified}"
                 Content="{Binding ButtonsStrings.cancel, ElementName=ctrl}" HorizontalAlignment="Left" Style="{StaticResource ButtonRight}" />
         </StackPanel>

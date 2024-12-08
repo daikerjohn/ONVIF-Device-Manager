@@ -38,7 +38,7 @@ namespace odm.ui {
 			//TODO: Synesis specific mode to be removed in plugins
 			container.RegisterInstance<odm.ui.core.IConfiguratorFactory>(new odm.ui.core.ConfiguratorFactory());
 
-			regionManager.RegisterViewWithRegion("devlist", typeof(DeviceListView));
+			regionManager.RegisterViewWithRegion("deviceslist", typeof(DeviceListView));
 			regionManager.RegisterViewWithRegion("mainframe", typeof(DeviceExplorerView));
 			regionManager.RegisterViewWithRegion("toolbar", typeof(ToolBarView));
 		}

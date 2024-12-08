@@ -55,7 +55,7 @@
 				HorizontalAlignment="Right" Style="{DynamicResource ButtonLeft}"/>-->
                     <Button 
                         x:Name="okButton"
-                        Click="{Binding btnErrorClose}"
+                        Command="{Binding btnErrorClose}"
                         Content="{Binding ButtonStrings.close}" 
                         Margin="3,0,0,0"
                         HorizontalAlignment="Right"/>
@@ -114,7 +114,7 @@
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
-                    <Button Margin="3,0,0,0" Click="{Binding OnGet}" Content="{Binding Strings.Get}"/>
+                    <Button Margin="3,0,0,0" Command="{Binding OnGet}" Content="{Binding Strings.Get}"/>
                 </StackPanel>
                 <DockPanel Margin="3" DockPanel.Dock="Top" HorizontalAlignment="Stretch">
                     <TextBlock DockPanel.Dock="Left"
@@ -130,7 +130,7 @@
                             Padding="4"
                             Margin="1"
                             Name="btnSaveLog"
-                            Click="{Binding OnSave}" 
+                            Command="{Binding OnSave}" 
                             Visibility="{Binding IsEnabled, ElementName=btnSaveLog, Converter={StaticResource boolToVisible}}"
                             Style="{DynamicResource ImageButton}">
                         <Image Source="/odm.ui.views;component/images/diskette_icon.png"/>
@@ -142,7 +142,7 @@
                             Padding="4" 
                             Margin="1"
                             Name="btnSaveAttach"
-                            Click="{Binding OnAttach}"
+                            Command="{Binding OnAttach}"
                             Visibility="{Binding IsEnabled, ElementName=btnSaveAttach, Converter={StaticResource boolToVisible}}"
                             Style="{DynamicResource ImageButton}">
                         <Image Source="/odm.ui.views;component/images/PaperClip3_Black.png"/>

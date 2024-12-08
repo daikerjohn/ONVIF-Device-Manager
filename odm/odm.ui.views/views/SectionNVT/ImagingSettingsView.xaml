@@ -67,9 +67,9 @@
 			</Grid>
 			
 			<StackPanel Orientation="Horizontal">
-				<Button Click="{Binding ApplyCommand, ElementName=ctrl}"
+				<Button Command="{Binding ApplyCommand, ElementName=ctrl}"
                             Content="{Binding ButtonsStrings.save, ElementName=ctrl}" HorizontalAlignment="Left"/>
-				<Button Visibility="Collapsed" Click="{Binding RevertCommand, ElementName=ctrl}"
+                <Button Visibility="Collapsed" Command="{Binding RevertCommand, ElementName=ctrl}"
                             Content="{Binding ButtonsStrings.cancel, ElementName=ctrl}" HorizontalAlignment="Left" Style="{StaticResource ButtonRight}" />
 			</StackPanel>
 		</StackPanel>
