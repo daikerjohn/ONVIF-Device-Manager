@@ -6,7 +6,7 @@ using System.Windows.Controls;
 using System.Windows;
 using System.ComponentModel;
 using utils;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using System.Text.RegularExpressions;
 using System.Globalization;
 

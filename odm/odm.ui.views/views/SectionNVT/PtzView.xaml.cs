@@ -9,7 +9,7 @@ using odm.ui.core;
 using odm.player;
 using utils;
 using odm.ui.controls;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using onvif.services;
 using System.ComponentModel;
 using System.Windows.Threading;

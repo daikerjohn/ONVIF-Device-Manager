@@ -14,9 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using utils;
 using odm.ui.core;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using odm.ui.controls;
 
 namespace odm.ui.views

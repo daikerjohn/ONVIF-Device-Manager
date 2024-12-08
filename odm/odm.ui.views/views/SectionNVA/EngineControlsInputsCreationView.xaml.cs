@@ -20,7 +20,7 @@ using odm.ui.core;
 using onvif.services;
 using utils;
 using System.Reactive.Disposables;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using System.Reactive.Linq;
 
 namespace odm.ui.activities {

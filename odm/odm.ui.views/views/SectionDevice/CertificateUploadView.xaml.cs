@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using Microsoft.FSharp.Control;
 using Microsoft.Practices.Unity;
 using odm.infra;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using System.Collections.Generic;
 using Org.BouncyCastle.X509;
 using onvif.services;

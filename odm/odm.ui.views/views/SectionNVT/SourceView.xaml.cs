@@ -20,7 +20,7 @@ using utils;
 using Microsoft.FSharp.Core;
 using System.Reactive.Disposables;
 using odm.ui.links;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using System.Reactive.Linq;
 using Microsoft.Practices.Unity;
 using odm.ui.controls;

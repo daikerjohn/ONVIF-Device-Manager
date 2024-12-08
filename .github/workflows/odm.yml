@@ -2,7 +2,7 @@ name: ODM
 
 on:
   push:
-    branches: [ "ak/rejuvinate", "Net45-updates" ]
+    branches: [ "ak/rejuvinate", "Net45-updates", "*" ]
   pull_request:
     branches: [ "ak/rejuvinate" ]
 

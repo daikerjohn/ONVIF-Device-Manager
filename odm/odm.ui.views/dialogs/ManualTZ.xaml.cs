@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Diagnostics;
 
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 using odm.ui.controls;
 using utils;

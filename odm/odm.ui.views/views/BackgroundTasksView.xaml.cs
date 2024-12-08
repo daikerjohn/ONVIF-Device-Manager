@@ -7,7 +7,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using Microsoft.FSharp.Control;
 using Microsoft.FSharp.Core;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using Microsoft.Practices.Unity;
 using odm.infra;
 using odm.ui.activities;

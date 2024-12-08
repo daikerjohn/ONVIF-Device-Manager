@@ -5,7 +5,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 	xmlns:l="clr-namespace:odm.ui.controls"
-	xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+	xmlns:cmd="clr-namespace:Prism.Commands;assembly=Prism"
 	x:Name="ctrl"
 	mc:Ignorable="d">
 	<Grid 
@@ -103,7 +103,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:l="clr-namespace:odm.ui.controls"
-             xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+             xmlns:cmd="clr-namespace:Prism.Commands;assembly=Prism"
              x:Name="ctrl"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="600">

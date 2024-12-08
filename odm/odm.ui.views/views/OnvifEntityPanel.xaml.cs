@@ -19,7 +19,7 @@ using Microsoft.Practices.Unity;
 using odm.ui.controls;
 using odm.ui.activities;
 using odm.ui.links;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 
 namespace odm.ui.views {
 	/// <summary>

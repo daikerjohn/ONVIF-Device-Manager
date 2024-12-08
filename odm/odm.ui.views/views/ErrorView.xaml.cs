@@ -5,7 +5,7 @@ using System.ServiceModel.Channels;
 using System.Windows.Controls;
 using System.Xml;
 using Microsoft.FSharp.Control;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 using odm.infra;
 using utils;

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using odm.ui.controls;
 using utils;
 
@@ -28,7 +28,7 @@ namespace odm.ui {
 			);
 			deviceListButton.Command = new DelegateCommand(
 				() => {
-					devlist.Visibility = Visibility.Visible;
+                    devlist.Visibility = Visibility.Visible;
 					deviceListButton.Visibility = Visibility.Collapsed;
 				}
 			);

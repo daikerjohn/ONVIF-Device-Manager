@@ -7,8 +7,8 @@ using System.Text;
 using System.Windows;
 using System.Windows.Input;
 
-using Microsoft.Practices.Prism.Commands;
-using Microsoft.Practices.Prism.Events;
+using Prism.Commands;
+using Prism.Events;
 using Microsoft.Practices.Unity;
 
 using odm.controllers;

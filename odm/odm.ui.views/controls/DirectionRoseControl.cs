@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Controls;
 using System.Windows;
 using System.Windows.Input;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 namespace odm.ui.controls {
     public class DirectionRoseControl: ContentControl {

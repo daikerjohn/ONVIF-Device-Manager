@@ -6,7 +6,7 @@
 	xmlns:l="clr-namespace:odm.ui"
     xmlns:views="clr-namespace:odm.ui.views"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-	xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+	xmlns:cmd="clr-namespace:Prism.Commands;assembly=Prism"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:Name="ctrl"
 	mc:Ignorable="d" d:DesignWidth="500">

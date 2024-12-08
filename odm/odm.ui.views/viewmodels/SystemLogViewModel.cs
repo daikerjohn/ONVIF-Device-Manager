@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 using odm.core;
 using odm.infra;
@@ -12,7 +12,7 @@ using onvif.services;
 using Microsoft.Win32;
 using System.IO;
 using System;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using odm.ui.views;
 
 namespace odm.ui.viewModels {

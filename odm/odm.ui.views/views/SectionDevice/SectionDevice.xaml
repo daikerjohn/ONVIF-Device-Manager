@@ -8,7 +8,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
     xmlns:ctrl="clr-namespace:odm.ui.controls"
 	xmlns:link="clr-namespace:odm.ui.links"
-	xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+	xmlns:cmd="clr-namespace:Prism.Commands;assembly=Prism"
 	mc:Ignorable="d">
 
 	<ContentControl

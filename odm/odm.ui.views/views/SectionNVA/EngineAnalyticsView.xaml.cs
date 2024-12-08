@@ -19,7 +19,7 @@ using odm.infra;
 using odm.player;
 using odm.ui.core;
 using onvif.services;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using utils;
 
 namespace odm.ui.activities {

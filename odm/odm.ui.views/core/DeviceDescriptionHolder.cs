@@ -10,7 +10,7 @@ using utils;
 using odm.infra;
 using System.Xml.Serialization;
 using System.IO;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 namespace odm.ui.core {
     public class DeviceDescriptionHolder:DependencyObject {

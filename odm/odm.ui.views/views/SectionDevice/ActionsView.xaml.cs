@@ -18,7 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using utils;
 using odm.infra;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 namespace odm.ui.activities
 {

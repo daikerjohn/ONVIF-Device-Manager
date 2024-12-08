@@ -22,7 +22,7 @@ using onvif.utils;
 using odm.ui.activities;
 using System.Reactive.Disposables;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using odm.ui.links;
 
 namespace odm.ui.views.SectionNVT {

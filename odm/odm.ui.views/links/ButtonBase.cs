@@ -3,8 +3,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-using Microsoft.Practices.Prism.Events;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Events;
+using Prism.Commands;
 
 using onvif.services;
 

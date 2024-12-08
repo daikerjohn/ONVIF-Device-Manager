@@ -3,11 +3,11 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"
-	xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
 	xmlns:my="clr-namespace:odm.ui.controls;assembly=odm.ui.views"
 	xmlns:prop="clr-namespace:odm.ui.Properties"
 	xmlns:ui="clr-namespace:odm.ui"
-	xmlns:p="http://www.codeplex.com/CompositeWPF"
+	xmlns:p="http://prismlibrary.com"
+    xmlns:prismreg="clr-namespace:Prism.Regions;assembly=Prism.Wpf"
 	Title="{Binding Title}" 
 	Width="{Binding Source={x:Static Member=prop:Settings.Default}, Path=MainWindowWidth, Mode=TwoWay}"
 	Height="{Binding Source={x:Static Member=prop:Settings.Default}, Path=MainWindowHeight, Mode=TwoWay}"
@@ -136,7 +136,7 @@
 		<ContentControl 
 			Grid.Row="0" Grid.Column="1"
 			HorizontalAlignment="Stretch" VerticalAlignment="Top"
-			p:RegionManager.RegionName="toolbar"/>
+			prismreg:RegionManager.RegionName="toolbar"/>
 		<Grid 
 			x:Name="contentLayout" 
 			Grid.Row="1" Grid.Column="1"
@@ -146,7 +146,7 @@
 				<ColumnDefinition Width="*" />
 			</Grid.ColumnDefinitions>
 			<ContentControl 
-				x:Name="devlist" Grid.Column="0" p:RegionManager.RegionName="deviceslist" 
+				x:Name="devlist" Grid.Column="0" prismreg:RegionManager.RegionName="deviceslist" 
 				Style="{StaticResource devlistStyle}"
 				Background="White"
 				Margin="0,0,3,0" 
@@ -155,7 +155,7 @@
 				HorizontalContentAlignment="Left"/>
 			<ContentControl 
 				Grid.Column="1" 
-				p:RegionManager.RegionName="mainframe" 
+				prismreg:RegionManager.RegionName="mainframe" 
 				Margin="0"/>
 		</Grid>
 	</Grid>

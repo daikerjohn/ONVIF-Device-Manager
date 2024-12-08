@@ -22,7 +22,7 @@ using Microsoft.Practices.Unity;
 using System.Reactive.Disposables;
 using utils;
 using Microsoft.Windows.Controls;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using System.Windows.Controls.Primitives;
 
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 using odm.core;
 using odm.infra;

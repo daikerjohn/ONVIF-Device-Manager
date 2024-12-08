@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Controls;
 using Microsoft.FSharp.Control;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 using odm.infra;
 using utils;

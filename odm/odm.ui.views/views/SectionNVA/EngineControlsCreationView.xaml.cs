@@ -19,7 +19,7 @@ using odm.ui.core;
 using onvif.services;
 using Microsoft.FSharp.Control;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using utils;
 
 namespace odm.ui.activities {

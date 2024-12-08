@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
-using Microsoft.Practices.Prism.Modularity;
-using Microsoft.Practices.Prism.UnityExtensions;
+using Prism.Modularity;	
 using Microsoft.Practices.Unity;
 using plugin_manager;
+using Prism.Unity;
 using utils;
 
 namespace odm.ui {
@@ -29,10 +29,10 @@ namespace odm.ui {
 			App.Current.MainWindow = wnd;
 			App.Current.MainWindow.Show();
 		}
-		protected override IModuleCatalog CreateModuleCatalog() {
-			//return Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(new Uri());
-			return base.CreateModuleCatalog();
-		}
+		//protected override IModuleCatalog CreateModuleCatalog() {
+		//	//return Microsoft.Practices.Prism.Modularity.ModuleCatalog.CreateFromXaml(new Uri());
+		//	return base.CreateModuleCatalog();
+		//}
 		protected override void ConfigureModuleCatalog() {
 			base.ConfigureModuleCatalog();
 			var moduleCatalog = (ModuleCatalog)this.ModuleCatalog;

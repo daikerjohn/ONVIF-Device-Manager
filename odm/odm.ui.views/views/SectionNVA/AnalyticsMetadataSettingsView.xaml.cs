@@ -13,7 +13,7 @@ using System.Xml;
 using System.Xml.Xsl;
 
 using Microsoft.FSharp.Control;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 
 using odm.core;

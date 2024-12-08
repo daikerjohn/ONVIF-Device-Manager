@@ -12,7 +12,7 @@ using System.Windows.Input;
 using System.Xml;
 using System.Xml.Serialization;
 using Microsoft.FSharp.Control;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 using Microsoft.Practices.Unity;
 
 using odm.controllers;

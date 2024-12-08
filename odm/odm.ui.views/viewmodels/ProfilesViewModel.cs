@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using Microsoft.Practices.Unity;
 using odm.core;
 using odm.ui.controls;

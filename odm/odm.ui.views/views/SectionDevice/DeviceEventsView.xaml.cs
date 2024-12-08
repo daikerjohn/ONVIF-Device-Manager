@@ -2,7 +2,7 @@
 using System.Linq;
 using utils;
 using System.Windows.Controls;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using Microsoft.Practices.Unity;
 using odm.ui.views;
 using System.Collections.ObjectModel;

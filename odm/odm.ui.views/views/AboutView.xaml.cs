@@ -11,7 +11,7 @@ using utils;
 using System.Windows.Documents;
 using System.Diagnostics;
 using Microsoft.FSharp.Core;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 namespace odm.ui.activities {
 	/// <summary>

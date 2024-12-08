@@ -13,8 +13,8 @@ using System.Xml.Xsl;
 using System.Xml.Serialization;
 
 using Microsoft.FSharp.Control;
-using Microsoft.Practices.Prism.Commands;
-using Microsoft.Practices.Prism.Events;
+using Prism.Commands;
+using Prism.Events;
 using Microsoft.Practices.Unity;
 
 using odm.core;

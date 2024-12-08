@@ -1,5 +1,5 @@
-﻿using Microsoft.Practices.Prism.Modularity;
-using Microsoft.Practices.Prism.Regions;
+﻿using Prism.Modularity;
+using Prism.Regions;
 using Microsoft.Practices.Unity;
 using odm.controllers;
 using odm.ui.activities;
@@ -38,7 +38,7 @@ namespace odm.ui {
 			//TODO: Synesis specific mode to be removed in plugins
 			container.RegisterInstance<odm.ui.core.IConfiguratorFactory>(new odm.ui.core.ConfiguratorFactory());
 
-			regionManager.RegisterViewWithRegion("deviceslist", typeof(DeviceListView));
+			regionManager.RegisterViewWithRegion("devlist", typeof(DeviceListView));
 			regionManager.RegisterViewWithRegion("mainframe", typeof(DeviceExplorerView));
 			regionManager.RegisterViewWithRegion("toolbar", typeof(ToolBarView));
 		}

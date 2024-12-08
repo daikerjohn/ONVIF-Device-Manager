@@ -118,14 +118,15 @@ namespace utils {
 				return Enumerable.Repeat(head, 1).Concat(src);
 			}
 		}
-
-		public static IEnumerable<T> Append<T>(this IEnumerable<T> src, T tail) {
+		
+		public static IEnumerable<T> AppendTo<T>(this IEnumerable<T> src, T tail) {
 			if (src == null) {
 				return Enumerable.Repeat(tail, 1);
 			} else {
 				return src.Concat(Enumerable.Repeat(tail, 1));
 			}
 		}
+		
 
 		/// <summary>
 		/// excludes all occurrences of item in src, based on equality

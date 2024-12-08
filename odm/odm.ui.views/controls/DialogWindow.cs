@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
 
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 using utils;
 

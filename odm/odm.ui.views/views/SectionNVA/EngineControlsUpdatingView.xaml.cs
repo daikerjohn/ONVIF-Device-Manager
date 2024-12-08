@@ -20,7 +20,7 @@ using Microsoft.FSharp.Control;
 using Microsoft.Practices.Unity;
 using System.Reactive.Disposables;
 using utils;
-using Microsoft.Practices.Prism.Commands;
+using Prism.Commands;
 
 namespace odm.ui.activities {
 	/// <summary>

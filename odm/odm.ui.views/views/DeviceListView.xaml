@@ -3,7 +3,7 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-	xmlns:cmd="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism"
+	xmlns:cmd="clr-namespace:Prism.Commands;assembly=Prism"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 	xmlns:l="clr-namespace:odm.ui.controls"
 	mc:Ignorable="d" 
@@ -136,9 +136,9 @@
 			<DockPanel>
 				<Button DockPanel.Dock="Right"
 					HorizontalAlignment="Right" Content="{Binding Strings.refresh}" 
-					cmd:Click.Command="{Binding onRefresh}"/>
+					Click="{Binding onRefresh}"/>
 				<Button DockPanel.Dock="Left"
-					cmd:Click.Command="{Binding onAdd}"
+					Click="{Binding onAdd}"
 					HorizontalAlignment="Left" Content="{Binding Strings.manualadd}"
 					ToolTip="Manually add"/>
 			</DockPanel>

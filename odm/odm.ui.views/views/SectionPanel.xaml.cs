@@ -22,7 +22,7 @@ using Microsoft.FSharp.Core;
 using odm.ui.activities;
 using odm.ui.controls;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 using odm.ui.views.SectionNVA;
 using odm.ui.views.SectionNVT;
 

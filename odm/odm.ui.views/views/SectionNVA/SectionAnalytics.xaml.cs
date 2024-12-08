@@ -21,7 +21,7 @@ using System.Reactive.Disposables;
 using odm.ui.activities;
 using odm.ui.controls;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Prism.Events;
+using Prism.Events;
 
 namespace odm.ui.views.SectionNVA {
 	/// <summary>
