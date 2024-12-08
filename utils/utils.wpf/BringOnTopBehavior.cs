@@ -27,7 +27,7 @@ namespace utils {
         private static void OnActivateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
             var v = d as UIElement;
             if (v == null) {
-                dbg.Break();
+                //dbg.Break();
                 return;
             }
 
@@ -42,7 +42,7 @@ namespace utils {
         static void v_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e) {
             var v = sender as UIElement;
             if (v == null) {
-                dbg.Break();
+                //dbg.Break();
                 return;
             }
 
