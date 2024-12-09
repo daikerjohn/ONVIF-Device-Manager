@@ -7,7 +7,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
     xmlns:my="clr-namespace:odm.ui.controls"
-    xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
 	mc:Ignorable="d" 
     x:Name="ctrl"
 	d:DesignHeight="1200" d:DesignWidth="600">

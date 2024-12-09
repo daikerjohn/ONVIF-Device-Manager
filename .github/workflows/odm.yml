@@ -21,11 +21,25 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup VS Dev Environment
-      uses: seanmiddleditch/gha-setup-vsdevenv@v4      
+    #- name: Setup VS Dev Environment
+    #  uses: seanmiddleditch/gha-setup-vsdevenv@v4
+
+    #- name: build application
+    #  run: devenv ${{ env.Solution_Name }} /Build "Release|x64" /restore /Project odm.ui.app
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v2
+      
+    - name: restore application
+      run: msbuild ${{ env.Solution_Name }} -t:Restore -p:Configuration=Release -p:Platform=x64
 
     - name: build application
-      run: devenv ${{ env.Solution_Name }} /Build "Release|x64" /Project odm.ui.app
+      run: msbuild ${{ env.Solution_Name }} -t:Build -p:Configuration=Release -p:Platform=x64 -fileLoggerParameters:LogFile=build.log;Append;Verbosity=detailed;Encoding=UTF-8
+       
+    - name: upload build log 
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-log
+        path: build.log
     
     - name: collect artifacts
       run: .\package.bat
@@ -41,6 +55,9 @@ jobs:
       working-directory: ${{env.DevEnvDir}}\CommonExtensions\Microsoft\VSI\DisableOutOfProcBuild
       run: .\DisableOutOfProcBuild.exe
       continue-on-error: true
+
+    - name: Setup VS Dev Environment
+      uses: seanmiddleditch/gha-setup-vsdevenv@v4
 
     - name: build installer
       run: devenv ${{ env.Solution_Name }} /Build "Release|x64" /Project odm.setup

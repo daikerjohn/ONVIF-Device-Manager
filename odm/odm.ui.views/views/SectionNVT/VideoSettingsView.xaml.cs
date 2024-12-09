@@ -9,7 +9,7 @@ using System.Windows.Media;
 using Microsoft.FSharp.Control;
 using Prism.Commands;
 using Microsoft.Practices.Unity;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using odm.infra;
 using odm.player;
 using odm.ui.controls;
@@ -17,6 +17,7 @@ using odm.ui.core;
 using onvif.services;
 using plugin_manager;
 using utils;
+using Xceed.Wpf.Toolkit;
 
 namespace odm.ui.activities {
 	public partial class VideoSettingsView : UserControl, IDisposable, IPlaybackController {

@@ -7,11 +7,12 @@ using odm.ui.core;
 using Microsoft.Practices.Unity;
 using odm.ui.controls;
 using utils;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using odm.player;
 using System.Reactive.Disposables;
 using odm.ui.activities;
 using onvif.services;
+using Xceed.Wpf.Toolkit;
 
 namespace odm.ui.views.CustomAnalytics {
     /// <summary>

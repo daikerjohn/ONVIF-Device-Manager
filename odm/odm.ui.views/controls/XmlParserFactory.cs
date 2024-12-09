@@ -10,7 +10,7 @@ using System.Windows.Shapes;
 using System.Windows.Media;
 using utils;
 using System.ComponentModel;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using System.Xml.Serialization;
 using System.CodeDom.Compiler;
 using Microsoft.CSharp;
@@ -18,6 +18,7 @@ using System.IO;
 using System.CodeDom;
 using onvif.services;
 using System.Xml.Linq;
+using Xceed.Wpf.Toolkit;
 
 namespace odm.ui.controls {
     public class XmlParserFactory {

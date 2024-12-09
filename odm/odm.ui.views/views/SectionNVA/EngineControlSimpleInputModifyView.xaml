@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -41,9 +41,9 @@
 
         <TextBlock Name="captionResolution" Grid.Column="0" Grid.Row="4" Margin="6,2,6,2" VerticalAlignment="Center" Text="Resolution"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" Margin="0,2,6,2" VerticalAlignment="Center">
-            <wtk:IntegerUpDown Name="valueWidth" Minimum="720" Maximum="2000"/>
+            <xctk:IntegerUpDown Name="valueWidth" Minimum="720" Maximum="2000"/>
             <TextBlock Text="x" Margin="2,0,2,0" VerticalAlignment="Center"/>
-            <wtk:IntegerUpDown Name="valueHeight" Minimum="576" Maximum="2000"/>
+            <xctk:IntegerUpDown Name="valueHeight" Minimum="576" Maximum="2000"/>
         </StackPanel>
         
         <TextBlock Name="captionEnableControl" Grid.Column="0" Grid.Row="5" Margin="6,2,6,2" VerticalAlignment="Center" Text="Enable control"/>

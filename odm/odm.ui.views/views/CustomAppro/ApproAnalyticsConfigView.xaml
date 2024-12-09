@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:g="clr-namespace:odm.ui.controls.GraphEditor"
-             xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:l="clr-namespace:odm.ui.controls"
              mc:Ignorable="d" 
              x:Name="ctrl"
@@ -12,7 +12,7 @@
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" Margin="3">
             <Label Name="sensitivityCaption" Content="Sensitivity" Margin="0,0,3,0"/>
-            <wtk:IntegerUpDown IsEnabled="{Binding IsChecked, ElementName=isEnabled}" Minimum="0" Name="valueSensitivity"/>
+            <xctk:IntegerUpDown IsEnabled="{Binding IsChecked, ElementName=isEnabled}" Minimum="0" Name="valueSensitivity"/>
         </StackPanel>
         <CheckBox DockPanel.Dock="Bottom" Margin="0, 3, 0, 3" Name="isEnabled" Content="Is enabled"/>
         <Grid>

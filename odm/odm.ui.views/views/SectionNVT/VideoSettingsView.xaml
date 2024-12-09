@@ -1,5 +1,5 @@
 ﻿<UserControl 
-	xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+	xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
 	x:Class="odm.ui.activities.VideoSettingsView"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:l="clr-namespace:odm.ui.controls"
@@ -56,7 +56,7 @@
                         <ColumnDefinition SharedSizeGroup="valueSize"/>
                     </Grid.ColumnDefinitions>
                     <Label Name="frameRateCaption" Content="{Binding Strings.frameRate, ElementName=ctrl}" Margin="0,0,0,6" HorizontalAlignment="Right" />
-                    <wtk:DoubleUpDown Name="frameRateValue" Grid.Column="1" Margin="0,0,0,6"
+                    <xctk:DoubleUpDown Name="frameRateValue" Grid.Column="1" Margin="0,0,0,6"
                                        Minimum="{Binding minFrameRate}"
                                        Maximum="{Binding maxFrameRate}"
                                        Value="{Binding frameRate}"/>
@@ -87,7 +87,7 @@
                         <ColumnDefinition SharedSizeGroup="valueSize"/>
                     </Grid.ColumnDefinitions>
                     <Label Name="bitrateCaption" Content="{Binding Strings.bitrate, ElementName=ctrl}" Margin="0,0,0,6" HorizontalAlignment="Right" />
-                    <wtk:DoubleUpDown Name="valueBitrate"
+                    <xctk:DoubleUpDown Name="valueBitrate"
                                        Grid.Column="1" Margin="0,0,0,6"
                                        Minimum="0"
                                        Maximum="100000"/>
@@ -106,7 +106,7 @@
                         <ColumnDefinition SharedSizeGroup="valueSize"/>
                     </Grid.ColumnDefinitions>
                     <Label Name="govLengthCaption" Content="{Binding Strings.govLength, ElementName=ctrl}" Margin="0,0,0,6" HorizontalAlignment="Right"/>
-                    <wtk:IntegerUpDown Name="valueGovLength"
+                    <xctk:IntegerUpDown Name="valueGovLength"
                                        Grid.Column="1" Margin="0,0,0,6"/>
                 </Grid>
                     

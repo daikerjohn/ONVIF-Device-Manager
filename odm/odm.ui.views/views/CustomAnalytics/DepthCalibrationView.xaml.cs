@@ -11,13 +11,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using Prism.Commands;
 using Microsoft.Practices.Unity;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using odm.player;
 using odm.ui.activities;
 using odm.ui.controls;
 using odm.ui.core;
 using onvif.services;
 using utils;
+using Xceed.Wpf.Toolkit;
 
 namespace odm.ui.views.CustomAnalytics {
     /// <summary>

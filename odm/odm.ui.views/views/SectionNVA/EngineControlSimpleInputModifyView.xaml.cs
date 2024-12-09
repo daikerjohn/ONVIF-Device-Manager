@@ -21,7 +21,7 @@ using Microsoft.FSharp.Control;
 using Microsoft.Practices.Unity;
 using System.Reactive.Disposables;
 using utils;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using Prism.Commands;
 using System.Windows.Controls.Primitives;
 

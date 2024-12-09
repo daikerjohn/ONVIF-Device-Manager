@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using Microsoft.FSharp.Control;
 using Prism.Commands;
 using Microsoft.Practices.Unity;
-using Microsoft.Windows.Controls;
+//using Microsoft.Windows.Controls;
 using odm.core;
 using odm.infra;
 using odm.onvif;

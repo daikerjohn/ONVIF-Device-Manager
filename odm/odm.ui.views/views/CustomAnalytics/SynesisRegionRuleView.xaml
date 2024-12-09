@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:l="clr-namespace:odm.ui.controls"
              xmlns:g="clr-namespace:odm.ui.controls.GraphEditor"
-             xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d" 
              x:Name="ctrl"
              d:DesignHeight="300" d:DesignWidth="300">
@@ -15,23 +15,23 @@
                 <CheckBox Name="enableMoving" Content="{Binding Strings.enableRule, ElementName=ctrl}" Margin="0,6,0,6"/>
                 <StackPanel Orientation="Horizontal" Margin="3" Visibility="Collapsed">
                     <CheckBox Name="enableDirectionMoving" Content="{Binding Strings.moving, ElementName=ctrl}"/>
-                    <wtk:DoubleUpDown Margin="0,1,0,1" Minimum="0" Name="valueDirectionMoving" IsEnabled="{Binding IsChecked, ElementName=enableDirectionMoving}"/>
+                    <xctk:DoubleUpDown Margin="0,1,0,1" Minimum="0" Name="valueDirectionMoving" IsEnabled="{Binding IsChecked, ElementName=enableDirectionMoving}"/>
                     <Label Content="%"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="3">
                     <CheckBox Name="enableLoitering" Content="{Binding Strings.loitering, ElementName=ctrl}"/>
-                    <wtk:IntegerUpDown Margin="0,1,0,1" Minimum="0" Name="valueLoiteringTime" IsEnabled="{Binding IsChecked, ElementName=enableLoitering}"/>
+                    <xctk:IntegerUpDown Margin="0,1,0,1" Minimum="0" Name="valueLoiteringTime" IsEnabled="{Binding IsChecked, ElementName=enableLoitering}"/>
                     <Label Content="{Binding Strings.seconds, ElementName=ctrl}"/>
                     <Label Visibility="Collapsed" Content="{Binding Strings.within, ElementName=ctrl}"/>
-                    <wtk:DoubleUpDown Visibility="Collapsed" Margin="0,1,0,1" Minimum="0" Name="valueLoiteringRadius" IsEnabled="{Binding IsChecked, ElementName=enableLoitering}"/>
+                    <xctk:DoubleUpDown Visibility="Collapsed" Margin="0,1,0,1" Minimum="0" Name="valueLoiteringRadius" IsEnabled="{Binding IsChecked, ElementName=enableLoitering}"/>
                     <Label Visibility="Collapsed" Content="m"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="3">
                     <CheckBox Name="enableRunning" Content="{Binding Strings.running, ElementName=ctrl}"/>
-                    <wtk:DoubleUpDown Margin="0,1,0,1" Minimum="0" Name="valueRunningSpeed" IsEnabled="{Binding IsChecked, ElementName=enableRunning}"/>
+                    <xctk:DoubleUpDown Margin="0,1,0,1" Minimum="0" Name="valueRunningSpeed" IsEnabled="{Binding IsChecked, ElementName=enableRunning}"/>
                     <Label Content="{Binding Strings.speed_kmh, ElementName=ctrl}"/>
                     <Label Content="{Binding Strings.runtime, ElementName=ctrl}"/>
-                    <wtk:IntegerUpDown Margin="0,1,0,1" Minimum="0" Name="valueRunningTime" IsEnabled="{Binding IsChecked, ElementName=enableRunning}"/>
+                    <xctk:IntegerUpDown Margin="0,1,0,1" Minimum="0" Name="valueRunningTime" IsEnabled="{Binding IsChecked, ElementName=enableRunning}"/>
                     <Label Content="{Binding Strings.seconds, ElementName=ctrl}"/>
                 </StackPanel>
                 <CheckBox Content="{Binding Strings.abandoning, ElementName=ctrl}" Name="enableAbandoning" Margin="3"/>

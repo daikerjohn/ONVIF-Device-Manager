@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "odm.plugins", "odm.plugins"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crypto", "libs\bccrypto-net-1.7-src-ext\crypto.csproj", "{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFToolkit.Extended", "libs\WPFToolkit.Extended-v1.5.0\WPFToolkit.Extended.csproj", "{72E591D6-8F83-4D8C-8F67-9C325E623234}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "odm.player.media", "odm\odm.player\odm.player.media\odm.player.media.csproj", "{5EE86409-3EA7-482A-8702-6DCA0D3BC4B1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "odm.player.net", "odm\odm.player\odm.player.net\odm.player.net.vcxproj", "{D3EEB24E-79A7-48B3-8D58-EDBABB68CF0A}"
@@ -94,10 +92,6 @@ Global
 		{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}.Debug|x64.Build.0 = Debug|Any CPU
 		{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}.Release|x64.ActiveCfg = Release|x64
 		{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}.Release|x64.Build.0 = Release|x64
-		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Debug|x64.Build.0 = Debug|Any CPU
-		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|x64.ActiveCfg = Release|x64
-		{72E591D6-8F83-4D8C-8F67-9C325E623234}.Release|x64.Build.0 = Release|x64
 		{5EE86409-3EA7-482A-8702-6DCA0D3BC4B1}.Debug|x64.ActiveCfg = Debug|Net45
 		{5EE86409-3EA7-482A-8702-6DCA0D3BC4B1}.Debug|x64.Build.0 = Debug|Net45
 		{5EE86409-3EA7-482A-8702-6DCA0D3BC4B1}.Release|x64.ActiveCfg = Release|x64
@@ -212,7 +206,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0} = {9D58181E-BC7B-470A-AC72-564E4A2838C9}
-		{72E591D6-8F83-4D8C-8F67-9C325E623234} = {9D58181E-BC7B-470A-AC72-564E4A2838C9}
 		{5EE86409-3EA7-482A-8702-6DCA0D3BC4B1} = {E873AEE8-3AFE-41B0-B365-8B2542ACFA6F}
 		{D3EEB24E-79A7-48B3-8D58-EDBABB68CF0A} = {E873AEE8-3AFE-41B0-B365-8B2542ACFA6F}
 		{28075439-FFFD-4E7A-AE50-A7C315566F87} = {E873AEE8-3AFE-41B0-B365-8B2542ACFA6F}
@@ -234,7 +227,7 @@ Global
 		{9819B4D5-2F85-4349-8159-E3A64CF97DC1} = {9D58181E-BC7B-470A-AC72-564E4A2838C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E265CFCC-EA0F-4E8A-9175-3CD88FBF7ADC}
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+		SolutionGuid = {E265CFCC-EA0F-4E8A-9175-3CD88FBF7ADC}
 	EndGlobalSection
 EndGlobal

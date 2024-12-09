@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:l="clr-namespace:odm.ui.controls"
              xmlns:g="clr-namespace:odm.ui.controls.GraphEditor"
-             xmlns:wtk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit/extended" 
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              mc:Ignorable="d"
              x:Name="ctrl"
              d:DesignHeight="300" d:DesignWidth="300">
@@ -35,7 +35,7 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <wtk:DoubleUpDown Name="valueFocalLength" Grid.Column="1" Grid.Row="1"/>
+                <xctk:DoubleUpDown Name="valueFocalLength" Grid.Column="1" Grid.Row="1"/>
                 
             </Grid>
             <StackPanel Grid.Column="0" Orientation="Vertical">
@@ -54,8 +54,8 @@
                     </Grid.RowDefinitions>
                     <Label Grid.Column="0" Grid.Row="0" Content="{Binding Strings.physWidth, ElementName=ctrl}" Visibility="{Binding Marker2DSpecific, ElementName=ctrl}"/>
                     <Label Grid.Column="0" Grid.Row="1" Content="{Binding Strings.physHeight, ElementName=ctrl}"/>
-                    <wtk:IntegerUpDown Name="valuePhysicalWidth" Minimum="1" Value="{Binding PhysicalWidth, ElementName=ctrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="0" Visibility="{Binding Marker2DSpecific, ElementName=ctrl}" />
-                    <wtk:IntegerUpDown Name="valuePhysicalHeight" Minimum="1" Value="{Binding PhysicalHeight, ElementName=ctrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" />
+                    <xctk:IntegerUpDown Name="valuePhysicalWidth" Minimum="1" Value="{Binding PhysicalWidth, ElementName=ctrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="0" Visibility="{Binding Marker2DSpecific, ElementName=ctrl}" />
+                    <xctk:IntegerUpDown Name="valuePhysicalHeight" Minimum="1" Value="{Binding PhysicalHeight, ElementName=ctrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" />
                 </Grid>
             </StackPanel>
         </Grid>

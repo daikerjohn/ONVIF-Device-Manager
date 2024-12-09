@@ -10,7 +10,7 @@
     <RootNamespace>utils</RootNamespace>
     <AssemblyName>utils.wpf</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <TargetFrameworkProfile />
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
   </PropertyGroup>

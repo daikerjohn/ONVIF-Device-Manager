@@ -6,7 +6,7 @@
 	xmlns:l="clr-namespace:odm.ui"
 	xmlns:sys="clr-namespace:System;assembly=mscorlib"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-    xmlns:wtk="clr-namespace:Microsoft.Windows.Controls;assembly=WPFToolkit.Extended"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
 	mc:Ignorable="d">
 	<Grid
 		Margin="10,15,10,10"
@@ -80,7 +80,7 @@
 						<TextBlock Name="videoRenderingFpsCaption" Text="video rendering fps "/>
                     </ContentControl>
                     <ContentControl Grid.Row="3" Style="{StaticResource valueContainer}">
-						<wtk:IntegerUpDown Name="videoRenderingFpsValue"/>
+						<xctk:IntegerUpDown Name="videoRenderingFpsValue"/>
                     </ContentControl>
 
                     <ContentControl Grid.Row="4" Style="{StaticResource captionContainer}">
@@ -153,7 +153,7 @@
                         <TextBlock Name="basePortCaption" Text="Base subscription port "/>
                     </ContentControl>
                     <ContentControl Grid.Row="3" Style="{StaticResource valueContainer}">
-                        <wtk:IntegerUpDown Minimum="0" Maximum="65535" Name="basePortValue"/>
+                        <xctk:IntegerUpDown Minimum="0" Maximum="65535" Name="basePortValue"/>
                     </ContentControl>
 
                     <ContentControl Grid.Row="4" Style="{StaticResource captionContainer}">
@@ -255,23 +255,23 @@
 				x:Name="exportButton"
 				IsEnabled="False"
 				Content="Export" 
-				HorizontalAlignment="Left" Style="{StaticResource ButtonLeft}"/>
+				HorizontalAlignment="Left"/>
 			<Button 
                 Visibility="Collapsed"
 				x:Name="importButton"
 				IsEnabled="False"
 				Content="Import" 
-				HorizontalAlignment="Left" Style="{StaticResource ButtonMiddle}"/>
+				HorizontalAlignment="Left"/>
 			<Button 
 				x:Name="applyButton"
 				Content="Apply" 
-                Command="l:AppSettingsView.ApplyCommand"
-				HorizontalAlignment="Left" Style="{StaticResource ButtonLeft}"/>
+                Command="{Binding ApplyCommand, ElementName=ctrl}"
+				HorizontalAlignment="Left" Style="{StaticResource ResourceKey=ButtonRight}"/>
 			<Button 
 				x:Name="cancelButton"
 				Content="Cancel" 
-                Command="l:AppSettingsView.CancelCommand"
-				Margin="0" HorizontalAlignment="Left" Style="{StaticResource ButtonRight}" />
+                Command="{Binding ApplyCommand, ElementName=ctrl}"
+				Margin="0" HorizontalAlignment="Left" Style="{StaticResource ResourceKey=ButtonRight}"/>
 		</StackPanel>
 
 	</Grid>
