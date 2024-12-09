@@ -24,8 +24,8 @@ for /d /r utils %%d in (bin,obj) do (
 )
 for /d /r . %%v in (.vs) do (
   @if exist "%%v" (
-    echo "%%v"
-    REM rd /s/q "%%d"
+    REM echo "%%v"
+    rd /s/q "%%v"
   )
 )
 

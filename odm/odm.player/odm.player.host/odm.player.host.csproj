@@ -69,22 +69,22 @@
     <Reference Include="System.Windows" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="PresentationCore">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="System.Deployment">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="System.Drawing">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="System.Runtime.Remoting">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="System.ServiceModel">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="System.Windows.Forms">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="WindowsBase" />
@@ -125,12 +125,6 @@
       <Project>{D3EEB24E-79A7-48B3-8D58-EDBABB68CF0A}</Project>
       <Name>odm.player.net</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="odm.player.host.exe.config">
-      <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
