@@ -37,14 +37,15 @@ namespace odm.ui.views {
 			navigateLeft.Content = "<";
 			navigateRight.Content = ">";
 			webContent.Navigated += (o, a) => {
-				var doc = (mshtml.HTMLDocument)webContent.Document;
-				valueUri.Text = doc.url;
+				//var doc = (mshtml.HTMLDocument)webContent.Document;
+				//valueUri.Text = doc.url;
+				valueUri.Text = webContent.Source.ToString();
 				navigateLeft.IsEnabled = webContent.CanGoBack;
 				navigateRight.IsEnabled = webContent.CanGoForward;
 				//state = loading;
 			};
 			webContent.LoadCompleted+=new LoadCompletedEventHandler((o,e)=>{
-				var doc = (mshtml.HTMLDocument)webContent.Document;
+				//var doc = (mshtml.HTMLDocument)webContent.Document;
 				
 				navigateLeft.IsEnabled = webContent.CanGoBack;
 				navigateRight.IsEnabled = webContent.CanGoForward;

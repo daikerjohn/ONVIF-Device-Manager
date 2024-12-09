@@ -214,7 +214,7 @@ namespace utils {
 			if (xmlResolver != null) {
 				return xmlResolver.GetNamespacesInScope(XmlNamespaceScope.ExcludeXml);
 			}
-			var asmSysRuntimeSerialization = Assembly.Load("System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089");
+			var asmSysRuntimeSerialization = Assembly.Load("System.Runtime.Serialization");
 			var t = asmSysRuntimeSerialization.GetType("System.Xml.XmlBaseReader");
 			var readerType = reader.GetType();
 			if (t.IsAssignableFrom(readerType)) {

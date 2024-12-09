@@ -1089,6 +1089,9 @@
     <PackageReference Include="System.Reactive.Linq">
       <Version>6.0.1</Version>
     </PackageReference>
+    <PackageReference Include="System.Threading.Tasks.Extensions">
+      <Version>4.6.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!--<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />-->
