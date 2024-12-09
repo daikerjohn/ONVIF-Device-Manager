@@ -84,8 +84,8 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "odm.setup", "odm.setup\odm.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{38872A5F-E87E-4FAD-B109-8EB7B2E6A4A0}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -227,7 +227,6 @@ Global
 		{9819B4D5-2F85-4349-8159-E3A64CF97DC1} = {9D58181E-BC7B-470A-AC72-564E4A2838C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
 		SolutionGuid = {E265CFCC-EA0F-4E8A-9175-3CD88FBF7ADC}
 	EndGlobalSection
 EndGlobal

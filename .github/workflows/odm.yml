@@ -29,11 +29,8 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2
       
-    - name: restore application
-      run: msbuild ${{ env.Solution_Name }} -t:Restore -p:Configuration=Release -p:Platform=x64
-
     - name: build application
-      run: msbuild ${{ env.Solution_Name }} -t:Build -p:Configuration=Release -p:Platform=x64 -fileLoggerParameters:LogFile=build.log;Append;Verbosity=detailed;Encoding=UTF-8
+      run: msbuild ${{ env.Solution_Name }} -restore -p:RestorePackagesConfig=true -t:Build -p:Configuration=Release -p:Platform=x64 -fileLoggerParameters:LogFile=build.log;Append;Verbosity=minimal;Encoding=UTF-8
        
     - name: upload build log 
       uses: actions/upload-artifact@v4
