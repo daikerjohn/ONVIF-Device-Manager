@@ -48,13 +48,13 @@ jobs:
         name: odm-build-zip
         path: build/
 
+    - name: Setup VS Dev Environment
+      uses: seanmiddleditch/gha-setup-vsdevenv@v4
+
     - name: DisableOutOfProcBuild
       working-directory: ${{env.DevEnvDir}}\CommonExtensions\Microsoft\VSI\DisableOutOfProcBuild
       run: .\DisableOutOfProcBuild.exe
       continue-on-error: true
-
-    - name: Setup VS Dev Environment
-      uses: seanmiddleditch/gha-setup-vsdevenv@v4
 
     - name: build installer
       run: devenv ${{ env.Solution_Name }} /Build "Release|x64" /Project odm.setup
